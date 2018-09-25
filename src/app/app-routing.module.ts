@@ -38,6 +38,11 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [
         RouterModule.forRoot(appRoutes),
+
+        // RouterModule.forRoot(appRoutes, { useHash: true }),
+
+        // this is using by fallback of the 404 error state of the index
+        // redirection for the not configured servers or old browser
     ],
     exports: [
         RouterModule,
